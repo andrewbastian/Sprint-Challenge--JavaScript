@@ -1,5 +1,5 @@
 // 1. Copy and paste your prototype in here and refactor into class syntax.
-class CuboidMaker {
+class CuboidMaker1 {
   constructor(length, width, height){
       this.length = length;
       this.width = width;
@@ -30,7 +30,7 @@ surfaceArea(){
   Create a cuboid object that uses the new keyword to use our CuboidMaker constructor
   Add properties and values of length: 4, width: 5, and height: 5 to cuboid.
 */
-const cuboid = new CuboidMaker({
+const cuboid1 = new CuboidMaker1({
   length: 4,
   width: 5,
   height: 5,
