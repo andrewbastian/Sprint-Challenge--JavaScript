@@ -29,25 +29,34 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+  .ForEach gives a function on each element in an array. .map will return a new array.
 
 2. What is the difference between a function and a method?
+  Methods are functions that are apart of an object or class.
 
 3. What is closure?
+  Closure happens when a function is inside of another function and the inner function is run from the outside function before the outer is executed.
 
 4. Describe the four rules of the 'this' keyword.
+  . window binding "this" will be the window or console object. It is the default setting of the ‘this’ keyword.
+  .Implicit binding a method is called with a dot after. The object to the left of that dot is "this"
+  . New Binding uses the 'keyword' "new". "this" will be the new constructor function.
+  . Explicit Binding also uses new constructor, but changes the objects that "this" points to object.
+
 
 5. Why do we need super() in an extended class?
+  Links a parent’s constructor to a child’s attributes. Used to instead of object.create(this, Class).
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
+- [√] Create a forked copy of this project.
+- [√] Add PM as collaborator on Github.
+- [√] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [√] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [√] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+- [√] You are now ready to build this project with your preferred IDE
 - [ ] Implement the project on your Branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
 
@@ -65,11 +74,11 @@ Your finished project must include all of the following requirements:
 **Pro tip for this challenge: If something seems like it isn't working locally, copy and paste your code up to codepen and take another look at the console.**
 
 ## Task 1: Objects and Arrays
-Test your knowledge of objects and arrays. 
+Test your knowledge of objects and arrays.
 * [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
 
 ## Task 2: Functions
-This challenge takes a look at callbacks and closures as well as scope. 
+This challenge takes a look at callbacks and closures as well as scope.
 * [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
 
 ## Task 3: Prototypes
