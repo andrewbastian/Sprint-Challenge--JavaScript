@@ -54,11 +54,9 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = [];
-// const alphabetically = graduates.sort((last, next) => {
-//   const [aEnd, aFirst] = last.split(',');
-//   const [aEnd, aFirst] = next.split(',');
-//   return alEnd > bLast ? 1: -1
-// });
+graduates.sort((last, next) => {
+  return last.university > next.university ? 1: -1
+});
 
 console.log(universities);
 
@@ -133,8 +131,7 @@ console.log(lowerPopulation);
 The zoos need to know their total animal population across the United States.  Find the total population from all the zoos using the .reduce() method.
 
 */
-const populationTotal = 0;
-const results = zooAnimals.reduce((a,b) => populationTotal.push(a + b.population, 0));
+const populationTotal = zooAnimals.reduce((a,b) => a + b.population, 0);
 console.log(populationTotal);
 
 
