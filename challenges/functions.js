@@ -6,9 +6,9 @@
   * The last parameter accepts a callback
   * In the body of the function return the callback with the two parameters that you created
 */
-const name = [{first_name: 'andrew', last_name: 'bastian'}];
-let myNames = name.map(me => `${me.first_name} ${me.last_name}`);
-console.log(myNames);
+let consume = function (a, b, cb){
+  return cb(a,b);
+}
 
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
@@ -18,17 +18,17 @@ console.log(myNames);
 function add (x,y){
   return (x + y);
 }
-console.log(add(1,2));
+console.log(consume(1,4,add));
 
 function multiply (x,y){
   return (x*y);
 }
-console.log(multiply(2,2));
+console.log(consume(2,2, multiply));
 
 function greet (first_name, last_name){
- return (`hello ${this.first_name} ${this.last_name} ,nice to meet you!`)
+ return (`hello ${first_name} ${last_name} ,nice to meet you!`)
 }
-console.log(greet());
+console.log(consume('andrew','bastian',greet));
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 // consume(2,2,add); // 4
 // consume(10,16,multiply); // 160
