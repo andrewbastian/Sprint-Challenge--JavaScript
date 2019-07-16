@@ -29,7 +29,7 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
-  .ForEach gives a function on each element in an array. .map will return a new array.
+  .ForEach applies callback to each element.  .map will return a new array constructed from what is returned from the callback applied to each element.
 
 2. What is the difference between a function and a method?
   Methods are functions that are apart of an object or class.
@@ -45,7 +45,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 
 5. Why do we need super() in an extended class?
-  Links a parent’s constructor to a child’s attributes. Used to instead of object.create(this, Class).
+  Links a parent’s constructor to a child’s attributes. Used to instead of object.create(this, Class). does 2: things calls parents and gives to child's properties (invokes parent). Also gives parents prototype to child.
 
 ## Project Set up
 
